@@ -28,6 +28,7 @@
       <Steel>30</Steel>
       <Plasteel>30</Plasteel>
     </costList>
+    <generateCommonality>0.2</generateCommonality>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/Gravbelt/Gravbelt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -40,6 +41,7 @@
       <Flammability>0.4</Flammability>
       <EquipDelay>2</EquipDelay>
     </statBases>
+    <generateCommonality>0</generateCommonality>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
@@ -58,40 +60,88 @@
         <renderUtilityAsPack>true</renderUtilityAsPack>
         <south>
           <offset>(0,-0.17)</offset>
-          <thin><offset>(0,-0.13)</offset></thin>
-          <female><offset>(0,-0.08)</offset></female>
-          <hulk><offset>(0,-0.14)</offset></hulk>
-          <fat><offset>(0,-0.10)</offset></fat>
+          <thin>
+            <offset>(0,-0.13)</offset>
+          </thin>
+          <female>
+            <offset>(0,-0.08)</offset>
+          </female>
+          <hulk>
+            <offset>(0,-0.14)</offset>
+          </hulk>
+          <fat>
+            <offset>(0,-0.10)</offset>
+          </fat>
         </south>
         <north>
           <offset>(0,-0.17)</offset>
-          <thin><offset>(0,-0.13)</offset></thin>
-          <male><offset>(0,-0.12)</offset></male>
-          <hulk><offset>(0,-0.20)</offset></hulk>
-          <female><offset>(0,-0.12)</offset></female>
-          <fat><offset>(0,-0.14)</offset></fat>
+          <thin>
+            <offset>(0,-0.13)</offset>
+          </thin>
+          <male>
+            <offset>(0,-0.12)</offset>
+          </male>
+          <hulk>
+            <offset>(0,-0.20)</offset>
+          </hulk>
+          <female>
+            <offset>(0,-0.12)</offset>
+          </female>
+          <fat>
+            <offset>(0,-0.14)</offset>
+          </fat>
         </north>
         <east>
           <offset>(-0.35,-0.17)</offset>
-          <thin><offset>(0.12,-0.10)</offset></thin>
-          <male><offset>(0.12,-0.05)</offset></male>
-          <hulk><offset>(-0.04,-0.12)</offset></hulk>
-          <fat><offset>(-0.15,0)</offset></fat>
-          <female><offset>(0.08,-0.05)</offset></female>
+          <thin>
+            <offset>(0.12,-0.10)</offset>
+          </thin>
+          <male>
+            <offset>(0.12,-0.05)</offset>
+          </male>
+          <hulk>
+            <offset>(-0.04,-0.12)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.15,0)</offset>
+          </fat>
+          <female>
+            <offset>(0.08,-0.05)</offset>
+          </female>
         </east>
         <west>
           <offset>(0.35,-0.17)</offset>
-          <thin><offset>(-0.12,-0.10)</offset></thin>
-          <male><offset>(-0.12,-0.05)</offset></male>
-          <hulk><offset>(0.04,-0.12)</offset></hulk>
-          <fat><offset>(0.15,0)</offset></fat>
-          <female><offset>(-0.08,-0.05)</offset></female>
+          <thin>
+            <offset>(-0.12,-0.10)</offset>
+          </thin>
+          <male>
+            <offset>(-0.12,-0.05)</offset>
+          </male>
+          <hulk>
+            <offset>(0.04,-0.12)</offset>
+          </hulk>
+          <fat>
+            <offset>(0.15,0)</offset>
+          </fat>
+          <female>
+            <offset>(-0.08,-0.05)</offset>
+          </female>
         </west>
-        <male>  <scale>(0.5,0.5)</scale></male>
-        <female><scale>(0.5,0.5)</scale></female>
-        <thin>  <scale>(0.4,0.4)</scale></thin>
-        <hulk>  <scale>(0.7,0.7)</scale></hulk>
-        <fat>   <scale>(0.7,0.7)</scale></fat>
+        <male>
+          <scale>(0.5,0.5)</scale>
+        </male>
+        <female>
+          <scale>(0.5,0.5)</scale>
+        </female>
+        <thin>
+          <scale>(0.4,0.4)</scale>
+        </thin>
+        <hulk>
+          <scale>(0.7,0.7)</scale>
+        </hulk>
+        <fat>
+          <scale>(0.7,0.7)</scale>
+        </fat>
       </wornGraphicData>
       <careIfWornByCorpse>false</careIfWornByCorpse>
       <careIfDamaged>false</careIfDamaged>

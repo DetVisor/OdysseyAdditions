@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+
   <ThingDef ParentName="ApparelBase">
     <defName>DV_Apparel_Slipvac</defName>
     <label>slipvac suit</label>
@@ -27,6 +27,7 @@
       <VacuumResistance>0.32</VacuumResistance>
     </equippedStatOffsets>
     <smeltable>true</smeltable>
+    <generateCommonality>0.2</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
