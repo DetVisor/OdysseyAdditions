@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>DV_Apparel_SlipvacHelm</defName>
+    <label>slipvac helm</label>
+    <description>A compact, domed helmet that efficiently recycles the user's oxygen, allowing them to breathe in the vacuum of space for hours at a time. The process isn't perfectly efficient, so the user must periodically return to a pressurized environment.\n\nSlipvac suits are much tighter to the body than normal vac suits, meaning they can be worn under other clothes.</description>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>6</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>20</Steel>
+      <Plasteel>20</Plasteel>
+    </costList>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+      <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/SlipvacHelm/SlipvacHelm</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel inherit="False">
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SlipvacHelm/SlipvacHelm</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups inherit="False">
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <layers inherit="False">
+        <li>EyeCover</li>
+      </layers>
+      <tags>
+        <li>Vacsuit</li>
+      </tags>
+      <drawData>
+        <dataNorth>
+          <layer>64</layer>
+        </dataNorth>
+        <dataSouth>
+          <layer>64</layer>
+        </dataSouth>
+        <dataEast>
+          <layer>64</layer>
+        </dataEast>
+        <dataWest>
+          <layer>64</layer>
+        </dataWest>
+      </drawData>
+      <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li MayRequire="kentington.saveourship2">
+        <compClass>SaveOurShip2.CompEVA</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>40</Steel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>StandardGravtech</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <displayPriority>237</displayPriority>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

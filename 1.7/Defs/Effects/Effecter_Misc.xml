@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <EffecterDef>
+        <defName>DV_GravjumpWarmupEffect</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+                <spawnLocType>OnSource</spawnLocType>
+                <soundDef>JumpMechPreLaunch</soundDef>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+                <scale>0.1~0.2</scale>
+                <spawnLocType>OnSource</spawnLocType>
+                <positionOffset>(0,0,-0.5)</positionOffset>
+                <fleckDef>DV_GravWarpWarmup</fleckDef>
+                <ticksBetweenMotes>15</ticksBetweenMotes>
+                <maxMoteCount>3</maxMoteCount>
+                <speed>3</speed>
+                <angle>170~190</angle>
+                <absoluteAngle>true</absoluteAngle>
+            </li>
+        </children>
+    </EffecterDef>
+
+    <EffecterDef>
+        <defName>DV_GravjumpFlightEffect</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+                <spawnLocType>OnSource</spawnLocType>
+                <soundDef>JumpMechLaunch</soundDef>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <spawnLocType>OnSource</spawnLocType>
+                <fleckDef>ShotFlash</fleckDef>
+                <scale>6</scale>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+                <scale>0.5~0.6</scale>
+                <spawnLocType>OnSource</spawnLocType>
+                <positionOffset>(0,0,-0.5)</positionOffset>
+                <fleckDef>DV_GravWarp</fleckDef>
+                <ticksBetweenMotes>1</ticksBetweenMotes>
+                <maxMoteCount>14</maxMoteCount>
+                <speed>4~5</speed>
+                <angle>170~190</angle>
+                <absoluteAngle>true</absoluteAngle>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+                <scale>0.9~0.7</scale>
+                <spawnLocType>OnSource</spawnLocType>
+                <positionOffset>(0,0,-0.5)</positionOffset>
+                <fleckDef>DV_GravWarpGlow</fleckDef>
+                <ticksBetweenMotes>1</ticksBetweenMotes>
+                <maxMoteCount>14</maxMoteCount>
+                <speed>4~5</speed>
+                <angle>160~200</angle>
+                <absoluteAngle>true</absoluteAngle>
+            </li>
+        </children>
+    </EffecterDef>
+
+    <FleckDef ParentName="FleckGlowDistortBackground">
+        <defName>DV_GravWarp</defName>
+        <graphicData>
+            <texPath>Things/Mote/Black</texPath>
+            <shaderParameters>
+                <_DistortionTex>/Things/Mote/PsychicDistortionRing</_DistortionTex>
+                <_distortionIntensity>0.15</_distortionIntensity>
+                <_brightnessMultiplier>1.5</_brightnessMultiplier>
+            </shaderParameters>
+            <drawSize>4</drawSize>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <solidTime>0.3</solidTime>
+        <fadeOutTime>0.08</fadeOutTime>
+        <growthRate>-8</growthRate>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckGlowDistortBackground">
+        <defName>DV_GravWarpWarmup</defName>
+        <graphicData>
+            <texPath>Things/Mote/Black</texPath>
+            <shaderParameters>
+                <_DistortionTex>/Things/Mote/PsychicDistortionRing</_DistortionTex>
+                <_distortionIntensity>0.15</_distortionIntensity>
+                <_brightnessMultiplier>1.5</_brightnessMultiplier>
+            </shaderParameters>
+            <drawSize>4</drawSize>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <solidTime>0.2</solidTime>
+        <fadeOutTime>0.2</fadeOutTime>
+        <growthRate>1</growthRate>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>DV_GravWarpGlow</defName>
+        <graphicData>
+            <texPath>Things/Mote/GravWarp</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(1,0.6,0.6,0.2)</color>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <solidTime>0.1</solidTime>
+        <fadeOutTime>0.4</fadeOutTime>
+        <growthRate>-9</growthRate>
+    </FleckDef>
+
+</Defs>

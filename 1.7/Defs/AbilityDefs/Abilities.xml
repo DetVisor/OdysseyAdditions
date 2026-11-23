@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityDef>
+        <defName>DV_GravbeltJump</defName>
+        <label>gravjump</label>
+        <description>Jump to a distant location using a built-in grav launcher.</description>
+        <iconPath>UI/Abilities/Gravjump</iconPath>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+        <charges>3</charges>
+        <cooldownTicksRange>15000</cooldownTicksRange>        <!-- 6h -->
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityJump</verbClass>
+            <label>jump</label>
+            <violent>false</violent>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <warmupTime>0.8</warmupTime>
+            <minRange>2.9</minRange>
+            <range>9.9</range>
+            <requireLineOfSight>true</requireLineOfSight>
+            <warmupEffecter>DV_GravjumpWarmupEffect</warmupEffecter>
+            <requireLineOfSight>true</requireLineOfSight>
+            <flightEffecterDef>DV_GravjumpFlightEffect</flightEffecterDef>
+            <flyWithCarriedThing>true</flyWithCarriedThing>
+            <soundLanding>JumpMechLand</soundLanding>
+            <soundCast Inherit="False" />
+            <flyWithCarriedThing>true</flyWithCarriedThing>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <jobDef>CastJump</jobDef>
+    </AbilityDef>
+
+</Defs>

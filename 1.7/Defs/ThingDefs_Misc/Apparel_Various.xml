@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="ApparelBase">
+    <defName>DV_Apparel_Slipvac</defName>
+    <label>slipvac suit</label>
+    <description>A tight suit that keeps the user safe in the vacuum of space. The suit restricts the wearer's movement, reducing their movement speed.\n\nSlipvac suits are much tighter to the body than normal vac suits, meaning they can be worn under other clothes.</description>
+    <generateAllowChance>0</generateAllowChance>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Slipvac/Slipvac</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>8</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>90</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <VacuumResistance>0.32</VacuumResistance>
+    </equippedStatOffsets>
+    <smeltable>true</smeltable>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Slipvac/Slipvac</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>Vacsuit</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>60</Steel>
+      <Plasteel>50</Plasteel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>StandardGravtech</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <displayPriority>235</displayPriority>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

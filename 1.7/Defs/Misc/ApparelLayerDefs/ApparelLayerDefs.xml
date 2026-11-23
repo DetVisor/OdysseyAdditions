@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ApparelLayerDef>
+    <defName>DV_OnSkin</defName>
+    <label>headgear</label>
+    <drawOrder>3500</drawOrder>
+  </ApparelLayerDef>
+</Defs>
