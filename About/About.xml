@@ -13,6 +13,13 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>Ludeon.RimWorld.Odyssey</li>
 	</loadAfter>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Odyssey</packageId>
+			<displayName>Rimworld - Odyssey</displayName>
+			<steamWorkshopUrl>https://store.steampowered.com/app/3022790/RimWorld_Odyssey/</steamWorkshopUrl>
+		</li>
+	</modDependencies>
 	<packageId>det.odysseyadditions</packageId>
 	<description>A small extra content pack adding 2 new shuttles, a new armor set and a new craftable gravbelt!</description>
 </ModMetaData>

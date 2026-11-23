@@ -16,9 +16,9 @@
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>8</Mass>
       <Flammability>0.2</Flammability>
-      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
       <Insulation_Cold>90</Insulation_Cold>
       <Insulation_Heat>15</Insulation_Heat>
       <EquipDelay>14</EquipDelay>
